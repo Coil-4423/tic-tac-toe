@@ -1,0 +1,66 @@
+.OX{
+  border:solid black 1px  ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:75px;
+  height:75px;
+  margin-top: 20px;
+  font-size: large;
+  cursor: pointer;
+}
+
+.OX:hover {background-color: #ffa319}
+
+.OX:active {
+  background-color: #ffd900;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  font-size: 1px;
+}
+
+.board{
+  background-color: aquamarine;
+  padding: 10px;
+  border:10px solid white ;
+  border-collapse: separate;
+}
+
+.row{
+  background-color: gray;
+  border-collapse: separate;
+}
+
+.cell{
+  background-color:blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 5px;
+  font-size: 100px;
+  color: yellow;
+  border-collapse: collapse;
+  padding: 50px;
+  height: 30px;
+  border-radius: 5%;
+}
+
+.p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid ;
+  justify-content: center;
+  font-size: 30px;
+  height: 40px;
+  width: 400px;
+  padding: 5px;
+  margin: auto;
+  margin-top: 15px;
+}

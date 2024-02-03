@@ -1,0 +1,19 @@
+h1 {
+  text-align: center;
+}
+.board {
+  border: 2px solid black;
+  user-select: none;
+  margin:auto;
+  width: fit-content;
+}
+
+.row {
+  display: flex;
+}
+
+.cell{
+  width: 30px;
+  aspect-ratio: 1;
+  border: 1px solid black;
+}
