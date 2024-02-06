@@ -13,10 +13,10 @@ export type stateType = {
   buttonState?: "o" | 'x' | 'eracer' | 'switch' | 'reset'|null;
   message: string;
   judge?: "draw" | 'win' | 'Game';
-  winner?: "o" | 'x'|null;
+  winner?: string|null;
 }
 
-const reducerFn = (state: stateType, action: ReducerAction) => {
+const reducerFn = (state: stateType, action: ReducerAction):stateType => {
   switch (action.type) {
     case 'OX':
       return { turn: action.payload, buttonState: action.payload, message: `Next player is ${action.payload}`,judge:'Game',winner:null }
@@ -47,7 +47,7 @@ const reducerFn = (state: stateType, action: ReducerAction) => {
 
 function App() {
   const [board1, setBoard1] = useState<(string[] | null[])[]>([[null, null, null], [null, null, null], [null, null, null]]);
-  const initialState= { turn: null, buttonState: 'reset', message: 'Chose first turn', judge: 'Game',winner:null };
+  const initialState:stateType= { turn: null, buttonState: 'reset', message: 'Chose first turn', judge: 'Game',winner:null };
   const [state, dispatchOX] = useReducer(reducerFn, initialState);
   const O = () => dispatchOX({ type: 'OX', payload: "o" });
   const X = () => dispatchOX({ type: 'OX', payload: "x" });

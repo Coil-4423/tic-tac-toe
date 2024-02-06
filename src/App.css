@@ -1,13 +1,16 @@
 .OX{
   border:solid black 1px  ;
+  background-color: rgb(255, 242, 0);
   display: flex;
   justify-content: center;
   align-items: center;
   width:75px;
   height:75px;
   margin-top: 20px;
-  font-size: large;
+  padding:0;
+  font-size: 25px;
   cursor: pointer;
+  border-radius: 10px;
 }
 
 .OX:hover {background-color: #ffa319}
@@ -51,6 +54,10 @@
   border-radius: 5%;
 }
 
+.cell:hover{
+  background-color: darkcyan;
+}
+
 .p{
   display: flex;
   justify-content: center;
@@ -63,4 +70,5 @@
   padding: 5px;
   margin: auto;
   margin-top: 15px;
+  border-radius: 5px;
 }
